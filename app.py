@@ -49,7 +49,7 @@ def index():
 
 @app.route("/search")
 def search():
-    render_template("results.html")
+    #render_template("results.html")
     x = request.args.get('search')
     searchResults = helpers.getSearchResults(x, 2)
     urls, titles, snippets = helpers.getInfo(searchResults)
